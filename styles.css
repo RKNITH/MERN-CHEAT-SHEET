@@ -1,0 +1,326 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Theme Switcher */
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+}
+
+.theme-switch input {
+    display: none;
+}
+
+.slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+
+.slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* Dark Theme */
+:root {
+    --bg-color: #fff;
+    --text-color: #000;
+    --link-color: #333;
+    --link-hover-color: #555;
+}
+
+[data-theme="dark"] {
+    --bg-color: #181818;
+    --text-color: #f4f4f4;
+    --link-color: #bbb;
+    --link-hover-color: #ddd;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+a {
+    color: var(--link-color);
+}
+
+a:hover {
+    color: var(--link-hover-color);
+}
+
+/* Additional Styles */
+header {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+footer {
+    background-color: var(--link-color);
+    color: var(--text-color);
+}
+
+nav ul li a {
+    color: var(--link-color);
+}
+
+nav ul li a:hover {
+    color: var(--link-hover-color);
+}
+
+section {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+section h2 {
+    border-color: var(--link-color);
+}
+
+.cheat-sheet-content ul li {
+    background: var(--bg-color);
+    border-color: var(--link-color);
+}
+
+.cheat-sheet-content ul li code {
+    background: var(--link-color);
+    color: var(--text-color);
+}
+
+/* Dark Theme specific styles */
+[data-theme="dark"] .cheat-sheet-content ul li {
+    background: #282828;
+}
+
+[data-theme="dark"] .cheat-sheet-content ul li code {
+    background: #444;
+    color: #fff;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Navigation */
+nav {
+    background: #444;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+nav ul li a:hover {
+    background: #555;
+}
+
+/* Main Content */
+main {
+    padding: 1rem;
+    margin-block: 30px;
+}
+
+section {
+
+    margin-bottom: 2rem;
+}
+
+section h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    color: #2196F3;
+}
+
+.cheat-sheet-content {
+    padding-left: 1rem;
+}
+
+.cheat-sheet-content h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: cadetblue;
+}
+
+.cheat-sheet-content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.cheat-sheet-content ul li {
+    background: #f4f4f4;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-left: 5px solid #333;
+}
+
+.cheat-sheet-content ul li code {
+    background: #eee;
+    padding: 0.2rem;
+}
+
+
+
+li {
+    color: blueviolet;
+}
+
+#heading {
+    background: linear-gradient(45deg, #ff6f61, #6b5b95, #88d8b0);
+    /* Gradient colors */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* Make the text color transparent so the gradient shows through */
+    font-size: 3em;
+    /* Adjust font size as needed */
+    text-align: center;
+    /* Center align text */
+}
+
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .cheat-sheet-content {
+        padding-left: 0;
+    }
+}
+
+
+nav {
+    position: relative;
+    background-color: #333;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+.nav-list a:hover {
+    background-color: #575757;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+}

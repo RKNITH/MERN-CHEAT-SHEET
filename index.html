@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MERN Stack Cheat Sheet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="heading">CHEAT SHEET</h1>
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+            </label>
+            <em>Enable Dark Mode!</em>
+        </div>
+    </header>
+    <nav>
+        <div class="menu-toggle" id="menu-toggle">&#x2715;</div>
+        <ul class="nav-list" id="nav-list">
+            <li><a href="#html">HTML</a></li>
+            <li><a href="#css">CSS</a></li>
+            <li><a href="#js">JavaScript</a></li>
+            <li><a href="#react">React.js</a></li>
+            <li><a href="#node">Node.js</a></li>
+            <li><a href="#express">Express.js</a></li>
+            <li><a href="#mongodb">MongoDB</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="html">
+            <h2>HTML</h2>
+            <div class="cheat-sheet-content">
+                <!-- Basic Tags -->
+                <h3>Basic Tags</h3>
+                <ul>
+                    <li><code>&lt;html&gt;&lt;/html&gt;</code> - Creates an HTML document</li>
+                    <li><code>&lt;head&gt;&lt;/head&gt;</code> - Contains metadata/information for the document</li>
+                    <li><code>&lt;body&gt;&lt;/body&gt;</code> - Sets off the visible portion of the document</li>
+                    <li><code>&lt;title&gt;&lt;/title&gt;</code> - Sets the title of the document</li>
+                </ul>
+
+                <!-- Text Tags -->
+                <h3>Text Tags</h3>
+                <ul>
+                    <li><code>&lt;h1&gt;&lt;/h1&gt;</code> to <code>&lt;h6&gt;&lt;/h6&gt;</code> - Creates headlines
+                    </li>
+                    <li><code>&lt;b&gt;&lt;/b&gt;</code> - Creates bold text</li>
+                    <li><code>&lt;i&gt;&lt;/i&gt;</code> - Creates italicized text</li>
+                    <li><code>&lt;u&gt;&lt;/u&gt;</code> - Underlines text</li>
+                    <li><code>&lt;strong&gt;&lt;/strong&gt;</code> - Emphasizes text (bold)</li>
+                    <li><code>&lt;em&gt;&lt;/em&gt;</code> - Emphasizes text (italic)</li>
+                    <li><code>&lt;br&gt;</code> - Inserts a single line break</li>
+                    <li><code>&lt;p&gt;&lt;/p&gt;</code> - Creates a paragraph</li>
+                    <li><code>&lt;blockquote&gt;&lt;/blockquote&gt;</code> - Defines a block of quoted text</li>
+                    <li><code>&lt;pre&gt;&lt;/pre&gt;</code> - Defines preformatted text</li>
+                </ul>
+
+                <!-- List Tags -->
+                <h3>List Tags</h3>
+                <ul>
+                    <li><code>&lt;ul&gt;&lt;/ul&gt;</code> - Creates an unordered list</li>
+                    <li><code>&lt;ol&gt;&lt;/ol&gt;</code> - Creates an ordered list</li>
+                    <li><code>&lt;li&gt;&lt;/li&gt;</code> - Defines a list item</li>
+                    <li><code>&lt;dl&gt;&lt;/dl&gt;</code> - Defines a description list</li>
+                    <li><code>&lt;dt&gt;&lt;/dt&gt;</code> - Defines a term in a description list</li>
+                    <li><code>&lt;dd&gt;&lt;/dd&gt;</code> - Describes the term in a description list</li>
+                </ul>
+
+                <!-- Link Tags -->
+                <h3>Link Tags</h3>
+                <ul>
+                    <li><code>&lt;a href="URL"&gt;&lt;/a&gt;</code> - Creates a hyperlink</li>
+                    <li><code>&lt;link rel="stylesheet" href="URL"&gt;</code> - Links to an external stylesheet</li>
+                    <li><code>&lt;nav&gt;&lt;/nav&gt;</code> - Defines navigation links</li>
+                </ul>
+
+                <!-- Image and Multimedia Tags -->
+                <h3>Image and Multimedia Tags</h3>
+                <ul>
+                    <li><code>&lt;img src="URL" alt="description"&gt;</code> - Embeds an image</li>
+                    <li><code>&lt;figure&gt;&lt;/figure&gt;</code> - Specifies self-contained content</li>
+                    <li><code>&lt;figcaption&gt;&lt;/figcaption&gt;</code> - Defines a caption for a figure</li>
+                    <li><code>&lt;audio src="URL" controls&gt;&lt;/audio&gt;</code> - Embeds audio content</li>
+                    <li><code>&lt;video src="URL" controls&gt;&lt;/video&gt;</code> - Embeds video content</li>
+                </ul>
+
+                <!-- Table Tags -->
+                <h3>Table Tags</h3>
+                <ul>
+                    <li><code>&lt;table&gt;&lt;/table&gt;</code> - Creates a table</li>
+                    <li><code>&lt;tr&gt;&lt;/tr&gt;</code> - Defines a table row</li>
+                    <li><code>&lt;th&gt;&lt;/th&gt;</code> - Defines a header cell in a table</li>
+                    <li><code>&lt;td&gt;&lt;/td&gt;</code> - Defines a cell in a table</li>
+                    <li><code>&lt;thead&gt;&lt;/thead&gt;</code> - Groups the header content in a table</li>
+                    <li><code>&lt;tbody&gt;&lt;/tbody&gt;</code> - Groups the body content in a table</li>
+                    <li><code>&lt;tfoot&gt;&lt;/tfoot&gt;</code> - Groups the footer content in a table</li>
+                    <li><code>&lt;caption&gt;&lt;/caption&gt;</code> - Adds a caption to a table</li>
+                </ul>
+
+                <!-- Form Tags -->
+                <h3>Form Tags</h3>
+                <ul>
+                    <li><code>&lt;form&gt;&lt;/form&gt;</code> - Creates an HTML form for user input</li>
+                    <li><code>&lt;input&gt;</code> - Defines an input control</li>
+                    <li><code>&lt;label&gt;&lt;/label&gt;</code> - Defines a label for an input element</li>
+                    <li><code>&lt;textarea&gt;&lt;/textarea&gt;</code> - Defines a multiline input control (text area)
+                    </li>
+                    <li><code>&lt;button&gt;&lt;/button&gt;</code> - Defines a clickable button</li>
+                    <li><code>&lt;select&gt;&lt;/select&gt;</code> - Defines a drop-down list</li>
+                    <li><code>&lt;option&gt;&lt;/option&gt;</code> - Defines an option in a drop-down list</li>
+                    <li><code>&lt;fieldset&gt;&lt;/fieldset&gt;</code> - Groups related elements in a form</li>
+                    <li><code>&lt;legend&gt;&lt;/legend&gt;</code> - Defines a caption for a
+                        <code>&lt;fieldset&gt;</code>
+                    </li>
+                </ul>
+
+                <!-- Semantic Tags -->
+                <h3>Semantic Tags</h3>
+                <ul>
+                    <li><code>&lt;header&gt;&lt;/header&gt;</code> - Defines a header for a document or section</li>
+                    <li><code>&lt;footer&gt;&lt;/footer&gt;</code> - Defines a footer for a document or section</li>
+                    <li><code>&lt;main&gt;&lt;/main&gt;</code> - Specifies the main content of a document</li>
+                    <li><code>&lt;section&gt;&lt;/section&gt;</code> - Defines a section in a document</li>
+                    <li><code>&lt;article&gt;&lt;/article&gt;</code> - Defines an article</li>
+                    <li><code>&lt;aside&gt;&lt;/aside&gt;</code> - Defines content aside from the content it is placed
+                        in</li>
+                    <li><code>&lt;nav&gt;&lt;/nav&gt;</code> - Defines navigation links</li>
+                    <li><code>&lt;details&gt;&lt;/details&gt;</code> - Defines additional details the user can view or
+                        hide</li>
+                    <li><code>&lt;summary&gt;&lt;/summary&gt;</code> - Defines a visible heading for the
+                        <code>&lt;details&gt;</code> element
+                    </li>
+                    <li><code>&lt;figure&gt;&lt;/figure&gt;</code> - Specifies self-contained content</li>
+                    <li><code>&lt;figcaption&gt;&lt;/figcaption&gt;</code> - Defines a caption for a
+                        <code>&lt;figure&gt;</code> element
+                    </li>
+                </ul>
+
+                <!-- Meta Tags -->
+                <h3>Meta Tags</h3>
+                <ul>
+                    <li><code>&lt;meta charset="UTF-8"&gt;</code> - Specifies the character encoding for the HTML
+                        document</li>
+                    <li><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code> - Sets
+                        the viewport to make the website responsive</li>
+                    <li><code>&lt;meta name="description" content="Free Web tutorials"&gt;</code> - Defines a
+                        description of the webpage</li>
+                    <li><code>&lt;meta name="keywords" content="HTML, CSS, JavaScript"&gt;</code> - Defines keywords for
+                        search engines</li>
+                    <li><code>&lt;meta name="author" content="John Doe"&gt;</code> - Defines the author of the document
+                    </li>
+                </ul>
+
+                <!-- Script Tags -->
+                <!-- Script Tags -->
+                <h3>Script Tags</h3>
+                <ul>
+                    <li><code>&lt;script&gt;&lt;/script&gt;</code> - Defines a client-side script (JavaScript)</li>
+                    <li><code>&lt;noscript&gt;&lt;/noscript&gt;</code> - Defines an alternate content for users that
+                        have disabled scripts</li>
+                </ul>
+
+                <!-- Style Tags -->
+                <h3>Style Tags</h3>
+                <ul>
+                    <li><code>&lt;style&gt;&lt;/style&gt;</code> - Defines style information for a document</li>
+                    <li><code>&lt;link rel="stylesheet" href="URL"&gt;</code> - Links to an external stylesheet</li>
+                </ul>
+
+                <!-- Media Tags -->
+                <h3>Media Tags</h3>
+                <ul>
+                    <li><code>&lt;img src="URL" alt="description"&gt;</code> - Embeds an image</li>
+                    <li><code>&lt;audio src="URL" controls&gt;&lt;/audio&gt;</code> - Embeds an audio file</li>
+                    <li><code>&lt;video src="URL" controls&gt;&lt;/video&gt;</code> - Embeds a video file</li>
+                    <li><code>&lt;source src="URL" type="media/type"&gt;</code> - Specifies multiple media resources for
+                        media elements</li>
+                    <li><code>&lt;track&gt;</code> - Defines text tracks for media elements</li>
+                </ul>
+
+                <!-- Interactive Elements -->
+                <h3>Interactive Elements</h3>
+                <ul>
+                    <li><code>&lt;details&gt;&lt;/details&gt;</code> - Creates a collapsible section</li>
+                    <li><code>&lt;summary&gt;&lt;/summary&gt;</code> - Creates a visible heading for the
+                        <code>&lt;details&gt;</code> element
+                    </li>
+                    <li><code>&lt;dialog&gt;&lt;/dialog&gt;</code> - Defines a dialog box or window</li>
+                    <li><code>&lt;menu&gt;&lt;/menu&gt;</code> - Defines a list/menu of commands</li>
+                </ul>
+
+                <!-- Document Structure Tags -->
+                <h3>Document Structure Tags</h3>
+                <ul>
+                    <li><code>&lt;div&gt;&lt;/div&gt;</code> - Defines a division or a section</li>
+                    <li><code>&lt;span&gt;&lt;/span&gt;</code> - Defines a section in a document (inline)</li>
+                    <li><code>&lt;header&gt;&lt;/header&gt;</code> - Defines a header for a document or section</li>
+                    <li><code>&lt;footer&gt;&lt;/footer&gt;</code> - Defines a footer for a document or section</li>
+                    <li><code>&lt;main&gt;&lt;/main&gt;</code> - Specifies the main content of a document</li>
+                    <li><code>&lt;section&gt;&lt;/section&gt;</code> - Defines a section in a document</li>
+                    <li><code>&lt;article&gt;&lt;/article&gt;</code> - Defines an article</li>
+                    <li><code>&lt;aside&gt;&lt;/aside&gt;</code> - Defines content aside from the content it is placed
+                        in</li>
+                    <li><code>&lt;nav&gt;&lt;/nav&gt;</code> - Defines navigation links</li>
+                </ul>
+
+                <!-- Metadata Tags -->
+                <h3>Metadata Tags</h3>
+                <ul>
+                    <li><code>&lt;meta charset="UTF-8"&gt;</code> - Specifies the character encoding for the HTML
+                        document</li>
+                    <li><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code> - Sets
+                        the viewport to make the website responsive</li>
+                    <li><code>&lt;meta name="description" content="Description of the page"&gt;</code> - Defines a
+                        description of the webpage</li>
+                    <li><code>&lt;meta name="keywords" content="HTML, CSS, JavaScript"&gt;</code> - Defines keywords for
+                        search engines</li>
+                    <li><code>&lt;meta name="author" content="Author Name"&gt;</code> - Defines the author of the
+                        document</li>
+                    <li><code>&lt;meta http-equiv="refresh" content="30"&gt;</code> - Refreshes the document every 30
+                        seconds</li>
+                </ul>
+
+                <!-- Miscellaneous Tags -->
+                <h3>Miscellaneous Tags</h3>
+                <ul>
+                    <li><code>&lt;!DOCTYPE html&gt;</code> - Defines the document type and version of HTML</li>
+                    <li><code>&lt;!-- comment --&gt;</code> - Adds a comment in the source code</li>
+                    <li><code>&lt;base href="URL"&gt;</code> - Specifies the base URL for all relative URLs in the
+                        document</li>
+                    <li><code>&lt;canvas&gt;&lt;/canvas&gt;</code> - Used to draw graphics via scripting (usually
+                        JavaScript)</li>
+                    <li><code>&lt;map&gt;&lt;/map&gt;</code> - Defines an image map</li>
+                    <li><code>&lt;area&gt;</code> - Defines a clickable area within an image map</li>
+                    <li><code>&lt;iframe&gt;&lt;/iframe&gt;</code> - Defines an inline frame</li>
+                    <li><code>&lt;embed&gt;</code> - Embeds external content</li>
+                    <li><code>&lt;object&gt;&lt;/object&gt;</code> - Defines an embedded object</li>
+                    <li><code>&lt;param&gt;</code> - Defines parameters for an <code>&lt;object&gt;</code> element</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="css">
+            <h2>CSS</h2>
+            <div class="cheat-sheet-content">
+                <!-- Selectors -->
+                <h3>Selectors</h3>
+                <ul>
+                    <li><code>*</code> - Universal selector</li>
+                    <li><code>#id</code> - Selects an element with the specified id</li>
+                    <li><code>.class</code> - Selects all elements with the specified class</li>
+                    <li><code>element</code> - Selects all elements of the specified type</li>
+                    <li><code>element, element</code> - Selects all specified elements</li>
+                    <li><code>element element</code> - Selects all elements within another element</li>
+                    <li><code>element > element</code> - Selects direct children of a specified element</li>
+                    <li><code>element + element</code> - Selects the next sibling of a specified element</li>
+                    <li><code>element[attr]</code> - Selects elements with a specified attribute</li>
+                    <li><code>element[attr=value]</code> - Selects elements with a specified attribute value</li>
+                </ul>
+
+                <!-- Box Model -->
+                <h3>Box Model</h3>
+                <ul>
+                    <li><code>margin</code> - Space outside the border</li>
+                    <li><code>border</code> - Border of the box</li>
+                    <li><code>padding</code> - Space inside the border</li>
+                    <li><code>content</code> - Content of the box</li>
+                    <li><code>box-sizing</code> - Defines how the width and height of an element are calculated
+                        (content-box, border-box)</li>
+                </ul>
+
+                <!-- Color -->
+                <h3>Color</h3>
+                <ul>
+                    <li><code>color</code> - Sets the color of the text</li>
+                    <li><code>background-color</code> - Sets the background color of an element</li>
+                    <li><code>opacity</code> - Sets the opacity level for an element</li>
+                </ul>
+
+                <!-- Text -->
+                <h3>Text</h3>
+                <ul>
+                    <li><code>font-family</code> - Specifies the font for an element</li>
+                    <li><code>font-size</code> - Specifies the size of the font</li>
+                    <li><code>font-weight</code> - Specifies the weight of the font (bold, normal, etc.)</li>
+                    <li><code>font-style</code> - Specifies the style of the font (italic, normal, etc.)</li>
+                    <li><code>text-align</code> - Aligns the text (left, right, center, justify)</li>
+                    <li><code>text-decoration</code> - Adds decoration to text (underline, overline, line-through, none)
+                    </li>
+                    <li><code>text-transform</code> - Controls the capitalization of text (uppercase, lowercase,
+                        capitalize)</li>
+                    <li><code>line-height</code> - Sets the space between lines of text</li>
+                    <li><code>letter-spacing</code> - Sets the space between characters in text</li>
+                </ul>
+
+                <!-- Background -->
+                <h3>Background</h3>
+                <ul>
+                    <li><code>background-image</code> - Sets the background image for an element</li>
+                    <li><code>background-repeat</code> - Sets if/how a background image will be repeated</li>
+                    <li><code>background-position</code> - Sets the starting position of a background image</li>
+                    <li><code>background-size</code> - Specifies the size of the background image (cover, contain, etc.)
+                    </li>
+                    <li><code>background-attachment</code> - Sets whether a background image is fixed or scrolls with
+                        the rest of the page</li>
+                </ul>
+
+                <!-- Layout -->
+                <h3>Layout</h3>
+                <ul>
+                    <li><code>display</code> - Specifies how an element is displayed (block, inline, inline-block, none,
+                        etc.)</li>
+                    <li><code>position</code> - Specifies the type of positioning for an element (static, relative,
+                        absolute, fixed, sticky)</li>
+                    <li><code>top, right, bottom, left</code> - Specifies the offset of a positioned element</li>
+                    <li><code>float</code> - Specifies whether an element should float to the left, right, or not at all
+                    </li>
+                    <li><code>clear</code> - Specifies what elements can float beside a cleared element and on which
+                        side</li>
+                    <li><code>z-index</code> - Specifies the stack order of an element</li>
+                    <li><code>overflow</code> - Specifies what happens if content overflows an element's box (visible,
+                        hidden, scroll, auto)</li>
+                    <li><code>flex</code> - Specifies the flexible length of a flex item</li>
+                    <li><code>flex-direction</code> - Defines the direction of the flexible items (row, row-reverse,
+                        column, column-reverse)</li>
+                    <li><code>justify-content</code> - Aligns the flexible container's items when the items do not use
+                        all available space (flex-start, flex-end, center, space-between, space-around)</li>
+                    <li><code>align-items</code> - Aligns the flexible container's items along the cross axis (stretch,
+                        center, flex-start, flex-end, baseline)</li>
+                </ul>
+
+                <!-- Animation -->
+                <h3>Animation</h3>
+                <ul>
+                    <li><code>@keyframes</code> - Specifies the animation code</li>
+                    <li><code>animation</code> - A shorthand property for all the animation properties</li>
+                    <li><code>animation-name</code> - Specifies the name of the @keyframes animation</li>
+                    <li><code>animation-duration</code> - Specifies the duration of the animation</li>
+                    <li><code>animation-timing-function</code> - Specifies the speed curve of the animation</li>
+                    <li><code>animation-delay</code> - Specifies a delay for the start of an animation</li>
+                    <li><code>animation-iteration-count</code> - Specifies the number of times an animation should be
+                        played</li>
+                    <li><code>animation-direction</code> - Specifies whether an animation should be played forwards,
+                        backwards, or in alternate cycles</li>
+                </ul>
+
+                <!-- Transition -->
+                <h3>Transition</h3>
+                <ul>
+                    <li><code>transition</code> - A shorthand property for setting the four transition properties</li>
+                    <li><code>transition-property</code> - Specifies the name of the CSS property the transition effect
+                        is for</li>
+                    <li><code>transition-duration</code> - Specifies how many seconds or milliseconds a transition
+                        effect takes to complete</li>
+                    <li><code>transition-timing-function</code> - Specifies the speed curve of the transition effect
+                    </li>
+                    <li><code>transition-delay</code> - Specifies when the transition effect will start</li>
+                </ul>
+
+                <!-- Transform -->
+                <h3>Transform</h3>
+                <ul>
+                    <li><code>transform</code> - Applies a 2D or 3D transformation to an element</li>
+                    <li><code>transform-origin</code> - Allows you to change the position on transformed elements</li>
+                    <li><code>transform-style</code> - Specifies how nested elements are rendered in 3D space</li>
+                    <li><code>perspective</code> - Gives an element a 3D-positioned child element</li>
+                    <li><code>perspective-origin</code> - Defines at which position the user is looking at the 3D object
+                    </li>
+                </ul>
+
+                <!-- Grid -->
+                <h3>Grid</h3>
+                <ul>
+                    <li><code>display: grid;</code> - Defines a grid container</li>
+                    <li><code>grid-template-columns</code> - Defines the columns of the grid with a space-separated list
+                        of values</li>
+                    <li><code>grid-template-rows</code> - Defines the rows of the grid with a space-separated list of
+                        values</li>
+                    <li><code>grid-column-gap</code> - Specifies the size of the gap between columns</li>
+                    <li><code>grid-row-gap</code> - Specifies the size of the gap between rows</li>
+                    <li><code>grid-template-areas</code> - Defines a grid template by referencing the names of the grid
+                        areas</li>
+                    <li><code>grid-area</code> - Gives an item a name so that it can be referenced by a template created
+                        with the <code>grid-template-areas</code></li>
+                    <li><code>justify-items</code> - Aligns grid items along the row axis</li>
+                    <li><code>align-items</code> - Aligns grid items along the column axis</li>
+                    <li><code>place-items</code> - A shorthand for <code>align-items</code> and
+                        <code>justify-items</code>
+                    </li>
+                </ul>
+                <!-- Flexbox -->
+                <h3>Flexbox</h3>
+                <ul>
+                    <li><code>display: flex;</code> - Defines a flex container</li>
+                    <li><code>flex-direction</code> - Specifies the direction of the flex items (row, row-reverse,
+                        column, column-reverse)</li>
+                    <li><code>flex-wrap</code> - Specifies whether the flex items should wrap or not (nowrap, wrap,
+                        wrap-reverse)</li>
+                    <li><code>justify-content</code> - Aligns the flex items along the main axis (flex-start, flex-end,
+                        center, space-between, space-around)</li>
+                    <li><code>align-items</code> - Aligns the flex items along the cross axis (stretch, flex-start,
+                        flex-end, center, baseline)</li>
+                    <li><code>align-content</code> - Aligns a flex container's lines within when there is extra space in
+                        the cross-axis (stretch, flex-start, flex-end, center, space-between, space-around)</li>
+                    <li><code>order</code> - Specifies the order of the flex items</li>
+                    <li><code>flex-grow</code> - Specifies how much a flex item will grow relative to the rest of the
+                        flex items</li>
+                    <li><code>flex-shrink</code> - Specifies how much a flex item will shrink relative to the rest of
+                        the flex items</li>
+                    <li><code>flex-basis</code> - Specifies the initial length of a flex item</li>
+                    <li><code>align-self</code> - Specifies the alignment for a flex item (auto, flex-start, flex-end,
+                        center, baseline, stretch)</li>
+                </ul>
+
+                <!-- Positioning -->
+                <h3>Positioning</h3>
+                <ul>
+                    <li><code>position</code> - Specifies the type of positioning method (static, relative, fixed,
+                        absolute, sticky)</li>
+                    <li><code>top</code> - Specifies the top position of an element</li>
+                    <li><code>right</code> - Specifies the right position of an element</li>
+                    <li><code>bottom</code> - Specifies the bottom position of an element</li>
+                    <li><code>left</code> - Specifies the left position of an element</li>
+                    <li><code>z-index</code> - Specifies the stack order of an element</li>
+                </ul>
+
+                <!-- Measurements -->
+                <h3>Measurements</h3>
+                <ul>
+                    <li><code>width</code> - Specifies the width of an element</li>
+                    <li><code>height</code> - Specifies the height of an element</li>
+                    <li><code>max-width</code> - Specifies the maximum width of an element</li>
+                    <li><code>max-height</code> - Specifies the maximum height of an element</li>
+                    <li><code>min-width</code> - Specifies the minimum width of an element</li>
+                    <li><code>min-height</code> - Specifies the minimum height of an element</li>
+                </ul>
+
+                <!-- Pseudo-classes -->
+                <h3>Pseudo-classes</h3>
+                <ul>
+                    <li><code>:hover</code> - Selects an element when you mouse over it</li>
+                    <li><code>:focus</code> - Selects an element when it has focus</li>
+                    <li><code>:active</code> - Selects an element when it is being activated by the user</li>
+                    <li><code>:nth-child(n)</code> - Selects the nth child of an element</li>
+                    <li><code>:first-child</code> - Selects the first child of an element</li>
+                    <li><code>:last-child</code> - Selects the last child of an element</li>
+                    <li><code>:not(selector)</code> - Selects every element that is not the specified element</li>
+                </ul>
+
+                <!-- Pseudo-elements -->
+                <h3>Pseudo-elements</h3>
+                <ul>
+                    <li><code>::before</code> - Inserts content before an element's content</li>
+                    <li><code>::after</code> - Inserts content after an element's content</li>
+                    <li><code>::first-letter</code> - Selects the first letter of an element</li>
+                    <li><code>::first-line</code> - Selects the first line of an element</li>
+                    <li><code>::selection</code> - Selects the portion of an element that is selected by a user</li>
+                </ul>
+
+                <!-- Media Queries -->
+                <h3>Media Queries</h3>
+                <ul>
+                    <li><code>@media</code> - Applies styles depending on the screen size or other characteristics of
+                        the device</li>
+                    <li><code>min-width</code> - Applies styles when the viewport width is greater than or equal to the
+                        specified value</li>
+                    <li><code>max-width</code> - Applies styles when the viewport width is less than or equal to the
+                        specified value</li>
+                    <li><code>orientation</code> - Applies styles depending on the device orientation (portrait or
+                        landscape)</li>
+                </ul>
+
+                <!-- Units -->
+                <h3>Units</h3>
+                <ul>
+                    <li><code>px</code> - Pixels</li>
+                    <li><code>em</code> - Relative to the font-size of the element</li>
+                    <li><code>rem</code> - Relative to the font-size of the root element</li>
+                    <li><code>%</code> - Percentage</li>
+                    <li><code>vw</code> - Relative to 1% of the width of the viewport</li>
+                    <li><code>vh</code> - Relative to 1% of the height of the viewport</li>
+                    <li><code>vmin</code> - Relative to 1% of the viewport's smaller dimension</li>
+                    <li><code>vmax</code> - Relative to 1% of the viewport's larger dimension</li>
+                </ul>
+
+                <!-- Responsive Design -->
+                <h3>Responsive Design</h3>
+                <ul>
+                    <li><code>@media</code> - Used to apply different styles for different media types/devices</li>
+                    <li><code>viewport</code> - Defines the visible area of a webpage</li>
+                    <li><code>flexbox</code> - A layout mode designed for responsive design</li>
+                    <li><code>grid</code> - A powerful layout system for creating complex responsive designs</li>
+                    <li><code>responsive images</code> - Using <code>srcset</code> and <code>sizes</code> attributes in
+                        the <code>&lt;img&gt;</code> tag</li>
+                </ul>
+
+                <!-- Miscellaneous -->
+                <h3>Miscellaneous</h3>
+                <ul>
+                    <li><code>cursor</code> - Specifies the type of cursor to be displayed (pointer, default, etc.)</li>
+                    <li><code>visibility</code> - Specifies whether an element is visible or hidden</li>
+                    <li><code>display</code> - Specifies the display behavior of an element (none, block, inline, etc.)
+                    </li>
+                    <li><code>overflow</code> - Specifies what happens if content overflows an element's box (visible,
+                        hidden, scroll, auto)</li>
+                    <li><code>white-space</code> - Specifies how white-space inside an element is handled (normal,
+                        nowrap, pre, etc.)</li>
+                    <li><code>list-style</code> - Specifies the type of list-item marker (disc, circle, square, none)
+                    </li>
+                    <li><code>table-layout</code> - Specifies the layout algorithm to be used for a table (auto, fixed)
+                    </li>
+                    <li><code>border-collapse</code> - Specifies whether table borders should collapse into a single
+                        border or be separated</li>
+                    <li><code>border-spacing</code> - Specifies the distance between the borders of adjacent cells</li>
+                    <li><code>box-shadow</code> - Adds shadow to an element's box</li>
+                    <li><code>text-shadow</code> - Adds shadow to text</li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section id="js">
+            <h2>JavaScript</h2>
+            <div class="cheat-sheet-content">
+                <!-- Basic Syntax -->
+                <h3>Basic Syntax</h3>
+                <ul>
+                    <li><code>var</code>, <code>let</code>, <code>const</code> - Declare variables</li>
+                    <li><code>function</code> - Declare a function</li>
+                    <li><code>if</code>, <code>else</code> - Conditional statements</li>
+                    <li><code>for</code>, <code>while</code>, <code>do...while</code> - Loop statements</li>
+                    <li><code>return</code> - Return a value from a function</li>
+                    <li><code>switch</code> - Switch statement for multiple conditions</li>
+                    <li><code>try...catch</code> - Error handling</li>
+                    <li><code>console.log()</code> - Print to the console</li>
+                    <li><code>===</code> vs <code>==</code> - Strict equality vs loose equality</li>
+                </ul>
+
+                <!-- Data Types -->
+                <h3>Data Types</h3>
+                <ul>
+                    <li><code>Number</code> - Numeric values</li>
+                    <li><code>String</code> - Textual data</li>
+                    <li><code>Boolean</code> - True or false</li>
+                    <li><code>Array</code> - List-like objects</li>
+                    <li><code>Object</code> - Key-value pairs</li>
+                    <li><code>null</code> - No value</li>
+                    <li><code>undefined</code> - Variable declared but not assigned</li>
+                    <li><code>Symbol</code> - Unique identifiers</li>
+                    <li><code>BigInt</code> - Large integers</li>
+                </ul>
+
+                <!-- Functions -->
+                <h3>Functions</h3>
+                <ul>
+                    <li><code>function name() {}</code> - Function declaration</li>
+                    <li><code>const name = function() {}</code> - Function expression</li>
+                    <li><code>const name = () => {}</code> - Arrow function</li>
+                    <li><code>function name(...args) {}</code> - Rest parameters</li>
+                    <li><code>name(...args)</code> - Spread syntax</li>
+                    <li><code>arguments</code> - Array-like object for arguments</li>
+                    <li><code>this</code> - Current context</li>
+                </ul>
+
+                <!-- Objects -->
+                <h3>Objects</h3>
+                <ul>
+                    <li><code>const obj = {}</code> - Object literal</li>
+                    <li><code>obj.key</code> or <code>obj['key']</code> - Accessing properties</li>
+                    <li><code>obj.key = value</code> - Setting properties</li>
+                    <li><code>Object.keys(obj)</code> - Get all keys</li>
+                    <li><code>Object.values(obj)</code> - Get all values</li>
+                    <li><code>Object.entries(obj)</code> - Get all key-value pairs</li>
+                    <li><code>delete obj.key</code> - Remove a property</li>
+                </ul>
+                <!-- Strings -->
+                <h3>Strings</h3>
+                <ul>
+                    <li><code>let str = "Hello, World!"</code> - String declaration</li>
+                    <li><code>str.length</code> - Get the length of the string</li>
+                    <li><code>str.toUpperCase()</code> - Convert to uppercase</li>
+                    <li><code>str.toLowerCase()</code> - Convert to lowercase</li>
+                    <li><code>str.charAt(index)</code> - Get the character at a specific index</li>
+                    <li><code>str.indexOf(substring)</code> - Get the index of the first occurrence of a substring</li>
+                    <li><code>str.lastIndexOf(substring)</code> - Get the index of the last occurrence of a substring
+                    </li>
+                    <li><code>str.includes(substring)</code> - Check if the string contains a substring</li>
+                    <li><code>str.startsWith(substring)</code> - Check if the string starts with a substring</li>
+                    <li><code>str.endsWith(substring)</code> - Check if the string ends with a substring</li>
+                    <li><code>str.substring(start, end)</code> - Extract a substring between two indices</li>
+                    <li><code>str.slice(start, end)</code> - Extract a part of a string</li>
+                    <li><code>str.split(delimiter)</code> - Split a string into an array of substrings</li>
+                    <li><code>str.replace(searchValue, newValue)</code> - Replace a substring with a new value</li>
+                    <li><code>str.trim()</code> - Remove whitespace from both ends of a string</li>
+                    <li><code>str.concat(str2)</code> - Concatenate two strings</li>
+                    <li><code>str.repeat(count)</code> - Repeat the string a specified number of times</li>
+                    <li><code>`Hello, ${name}!`</code> - Template literals for embedding expressions</li>
+                </ul>
+
+
+                <!-- Arrays -->
+                <h3>Arrays</h3>
+                <ul>
+                    <li><code>const arr = []</code> - Array literal</li>
+                    <li><code>arr.push(value)</code> - Add to end</li>
+                    <li><code>arr.pop()</code> - Remove from end</li>
+                    <li><code>arr.unshift(value)</code> - Add to start</li>
+                    <li><code>arr.shift()</code> - Remove from start</li>
+                    <li><code>arr[index]</code> - Access element</li>
+                    <li><code>arr.length</code> - Array length</li>
+                    <li><code>arr.map(fn)</code> - Create new array with results of calling a function on every element
+                    </li>
+                    <li><code>arr.filter(fn)</code> - Create new array with all elements that pass the test</li>
+                    <li><code>arr.reduce(fn, initial)</code> - Apply a function against an accumulator and each element
+                        to reduce it to a single value</li>
+                    <li><code>arr.forEach(fn)</code> - Execute a provided function once for each array element</li>
+                    <li><code>arr.find(fn)</code> - Find first element that passes the test</li>
+                    <li><code>arr.includes(value)</code> - Check if an array includes a value</li>
+                </ul>
+
+                <!-- DOM Manipulation -->
+                <h3>DOM Manipulation</h3>
+                <ul>
+                    <li><code>document.getElementById(id)</code> - Select an element by id</li>
+                    <li><code>document.querySelector(selector)</code> - Select the first element that matches a CSS
+                        selector</li>
+                    <li><code>document.querySelectorAll(selector)</code> - Select all elements that match a CSS selector
+                    </li>
+                    <li><code>element.addEventListener(event, function)</code> - Add an event listener to an element
+                    </li>
+                    <li><code>element.innerHTML</code> - Get/set HTML content</li>
+                    <li><code>element.textContent</code> - Get/set text content</li>
+                    <li><code>element.style.property</code> - Get/set CSS properties</li>
+                    <li><code>element.classList.add('class')</code> - Add a class</li>
+                    <li><code>element.classList.remove('class')</code> - Remove a class</li>
+                    <li><code>element.classList.toggle('class')</code> - Toggle a class</li>
+                </ul>
+
+                <!-- Events -->
+                <h3>Events</h3>
+                <ul>
+                    <li><code>click</code> - Mouse click</li>
+                    <li><code>mouseover</code> - Mouse over</li>
+                    <li><code>mouseout</code> - Mouse out</li>
+                    <li><code>keydown</code> - Key pressed</li>
+                    <li><code>keyup</code> - Key released</li>
+                    <li><code>submit</code> - Form submitted</li>
+                    <li><code>load</code> - Page loaded</li>
+                    <li><code>resize</code> - Window resized</li>
+                </ul>
+
+                <!-- Asynchronous JavaScript -->
+                <h3>Asynchronous JavaScript</h3>
+                <ul>
+                    <li><code>setTimeout(function, delay)</code> - Execute a function after a delay</li>
+                    <li><code>setInterval(function, interval)</code> - Execute a function repeatedly with a fixed time
+                        delay</li>
+                    <li><code>Promise</code> - Represents the eventual completion (or failure) of an asynchronous
+                        operation</li>
+                    <li><code>async</code> - Declares an asynchronous function</li>
+                    <li><code>await</code> - Waits for a promise to be resolved</li>
+                    <li><code>fetch(url)</code> - Make a network request</li>
+                    <li><code>then()</code> - Handle a fulfilled promise</li>
+                    <li><code>catch()</code> - Handle a rejected promise</li>
+                </ul>
+
+                <!-- JSON -->
+                <h3>JSON</h3>
+                <ul>
+                    <li><code>JSON.parse(string)</code> - Parse a JSON string into a JavaScript object</li>
+                    <li><code>JSON.stringify(object)</code> - Convert a JavaScript object into a JSON string</li>
+                </ul>
+
+                <!-- Local Storage -->
+                <h3>Local Storage</h3>
+                <ul>
+                    <li><code>localStorage.setItem(key, value)</code> - Store a value</li>
+                    <li><code>localStorage.getItem(key)</code> - Retrieve a value</li>
+                    <li><code>localStorage.removeItem(key)</code> - Remove a value</li>
+                    <li><code>localStorage.clear()</code> - Clear all storage</li>
+                </ul>
+
+                <!-- Miscellaneous -->
+                <h3>Miscellaneous</h3>
+                <ul>
+                    <li><code>Math.random()</code> - Generate a random number</li>
+                    <li><code>Math.floor()</code> - Round a number downwards</li>
+                    <li><code>Date()</code> - Get the current date and time</li>
+                    <li><code>Array.isArray()</code> - Check if a value is an array</li>
+                    <li><code>typeof</code> - Determine the type of a variable</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="react">
+            <h2>React.js</h2>
+            <div class="cheat-sheet-content">
+                <!-- Components -->
+                <h3>Components</h3>
+                <ul>
+                    <li><code>class Component extends React.Component</code> - Class component</li>
+                    <li><code>function Component()</code> - Functional component</li>
+                    <li><code>const Component = () => {}</code> - Arrow function component</li>
+                    <li><code>props</code> - Properties passed to components</li>
+                    <li><code>state</code> - State in class components</li>
+                    <li><code>useState(initialValue)</code> - State hook in functional components</li>
+                    <li><code>useEffect(callback, dependencies)</code> - Effect hook for side effects</li>
+                </ul>
+
+                <!-- JSX -->
+                <h3>JSX</h3>
+                <ul>
+                    <li><code>&lt;div&gt;&lt;/div&gt;</code> - JSX syntax for HTML elements</li>
+                    <li><code>{expression}</code> - Embed JavaScript expressions in JSX</li>
+                    <li><code>className="class"</code> - Add a CSS class</li>
+                    <li><code>htmlFor="id"</code> - Corresponds to the <code>for</code> attribute in HTML</li>
+                    <li><code>self-closing tags</code> - <code>&lt;Component /&gt;</code></li>
+                    <li><code>Fragments</code> - <code>&lt;React.Fragment&gt;...&lt;/React.Fragment&gt;</code> or
+                        <code>&lt;&gt;...&lt;/&gt;</code>
+                    </li>
+                </ul>
+
+                <!-- Props -->
+                <h3>Props</h3>
+                <ul>
+                    <li><code>this.props</code> - Access props in class components</li>
+                    <li><code>props.name</code> - Access props in functional components</li>
+                    <li><code>defaultProps</code> - Set default props for a component</li>
+                    <li><code>propTypes</code> - Typechecking props</li>
+                </ul>
+
+                <!-- State and Lifecycle -->
+                <h3>State and Lifecycle</h3>
+                <ul>
+                    <li><code>this.state</code> - State in class components</li>
+                    <li><code>this.setState()</code> - Update state in class components</li>
+                    <li><code>constructor(props)</code> - Initialize state in class components</li>
+                    <li><code>componentDidMount()</code> - Lifecycle method, called after component is mounted</li>
+                    <li><code>componentDidUpdate(prevProps, prevState)</code> - Lifecycle method, called after component
+                        is updated</li>
+                    <li><code>componentWillUnmount()</code> - Lifecycle method, called before component is unmounted
+                    </li>
+                    <li><code>useState(initialValue)</code> - State hook for functional components</li>
+                    <li><code>useEffect(callback, dependencies)</code> - Effect hook for functional components</li>
+                </ul>
+
+                <!-- Event Handling -->
+                <h3>Event Handling</h3>
+                <ul>
+                    <li><code>onClick={this.handleClick}</code> - Attach event handler in JSX</li>
+                    <li><code>this.handleClick = this.handleClick.bind(this)</code> - Bind event handler in constructor
+                    </li>
+                    <li><code>event.preventDefault()</code> - Prevent default event behavior</li>
+                    <li><code>event.target.value</code> - Access event target value</li>
+                </ul>
+
+                <!-- Forms -->
+                <h3>Forms</h3>
+                <ul>
+                    <li><code>Controlled Components</code> -
+                        <code>&lt;input value={this.state.value} onChange={this.handleChange} /&gt;</code>
+                    </li>
+                    <li><code>Uncontrolled Components</code> - <code>&lt;input defaultValue="default" /&gt;</code></li>
+                    <li><code>Refs</code> - <code>React.createRef()</code>, <code>this.myRef = React.createRef()</code>
+                    </li>
+                    <li><code>&lt;form onSubmit={this.handleSubmit}&gt;&lt;/form&gt;</code> - Form submission</li>
+                </ul>
+
+                <!-- Conditional Rendering -->
+                <h3>Conditional Rendering</h3>
+                <ul>
+                    <li><code>{condition ? 'true' : 'false'}</code> - Ternary operator</li>
+                    <li><code>{condition && 'true'}</code> - Logical && operator</li>
+                    <li><code>if (condition) { return 'true'; }</code> - Inline if with return statements</li>
+                </ul>
+
+                <!-- Lists and Keys -->
+                <h3>Lists and Keys</h3>
+                <ul>
+                    <li><code>{array.map(item => &lt;Component key={item.id} ... /&gt; )}</code> - Rendering lists</li>
+                    <li><code>key</code> - Unique identifier for list items</li>
+                </ul>
+
+                <!-- Context API -->
+                <h3>Context API</h3>
+                <ul>
+                    <li><code>const MyContext = React.createContext()</code> - Create a context</li>
+                    <li><code>&lt;MyContext.Provider value={value}&gt;&lt;/MyContext.Provider&gt;</code> - Provide
+                        context value</li>
+                    <li><code>&lt;MyContext.Consumer&gt;{value => ...}&lt;/MyContext.Consumer&gt;</code> - Consume
+                        context value</li>
+                    <li><code>useContext(MyContext)</code> - Hook to use context in functional components</li>
+                </ul>
+
+                <!-- Hooks -->
+                <h3>Hooks</h3>
+                <ul>
+                    <li><code>useState(initialValue)</code> - State hook</li>
+                    <li><code>useEffect(callback, dependencies)</code> - Effect hook</li>
+                    <li><code>useContext(MyContext)</code> - Context hook</li>
+                    <li><code>useReducer(reducer, initialState)</code> - Reducer hook</li>
+                    <li><code>useRef(initialValue)</code> - Ref hook</li>
+                    <li><code>useMemo(callback, dependencies)</code> - Memoization hook</li>
+                    <li><code>useCallback(callback, dependencies)</code> - Callback hook</li>
+                    <li><code>useLayoutEffect(callback, dependencies)</code> - Layout effect hook</li>
+                </ul>
+
+                <!-- Routing -->
+                <h3>Routing</h3>
+                <ul>
+                    <li><code>react-router-dom</code> - React Router library</li>
+                    <li><code>&lt;BrowserRouter&gt;&lt;/BrowserRouter&gt;</code> - Router component</li>
+                    <li><code>&lt;Route path="/path" component={Component} /&gt;</code> - Define route</li>
+                    <li><code>&lt;Link to="/path"&gt;Link&lt;/Link&gt;</code> - Navigation link</li>
+                    <li><code>&lt;Switch&gt;&lt;Route ... /&gt;&lt;/Switch&gt;</code> - Switch between routes</li>
+                    <li><code>useHistory()</code> - Access history object</li>
+                    <li><code>useParams()</code> - Access URL parameters</li>
+                    <li><code>useLocation()</code> - Access location object</li>
+                </ul>
+
+                <!-- Performance Optimization -->
+                <h3>Performance Optimization</h3>
+                <ul>
+                    <li><code>React.memo(Component)</code> - Memoize functional components</li>
+                    <li><code>shouldComponentUpdate()</code> - Control re-rendering in class components</li>
+                    <li><code>React.PureComponent</code> - Optimize class components</li>
+                    <li><code>useMemo(callback, dependencies)</code> - Memoize values in functional components</li>
+                    <li><code>useCallback(callback, dependencies)</code> - Memoize functions in functional components
+                    </li>
+                </ul>
+
+                <!-- Miscellaneous -->
+                <h3>Miscellaneous</h3>
+                <ul>
+                    <li><code>React.Fragment</code> - Group multiple elements without adding extra nodes</li>
+                    <li><code>React.createRef()</code> - Create refs</li>
+                    <li><code>React.forwardRef()</code> - Forward refs to child components</li>
+                    <li><code>React.lazy(() => import('./Component'))</code> - Code splitting with React.lazy</li>
+                    <li><code>&lt;Suspense fallback={&lt;div&gt;Loading...&lt;/div&gt;}&gt;&lt;/Suspense&gt;</code> -
+                        Suspense for lazy loading</li>
+                    <li><code>PropTypes</code> - Typechecking props with PropTypes</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="node">
+            <h2>Node.js</h2>
+            <div class="cheat-sheet-content">
+                <!-- Modules -->
+                <h3>Modules</h3>
+                <ul>
+                    <li><code>require('module')</code> - Import a module</li>
+                    <li><code>module.exports</code> - Export a module</li>
+                    <li><code>import moduleName from 'module'</code> - ES6 import</li>
+                    <li><code>export default moduleName</code> - ES6 export</li>
+                </ul>
+
+                <!-- File System -->
+                <h3>File System</h3>
+                <ul>
+                    <li><code>fs.readFile(path, callback)</code> - Read a file</li>
+                    <li><code>fs.readFileSync(path)</code> - Synchronously read a file</li>
+                    <li><code>fs.writeFile(path, data, callback)</code> - Write to a file</li>
+                    <li><code>fs.writeFileSync(path, data)</code> - Synchronously write to a file</li>
+                    <li><code>fs.appendFile(path, data, callback)</code> - Append data to a file</li>
+                    <li><code>fs.unlink(path, callback)</code> - Delete a file</li>
+                    <li><code>fs.rename(oldPath, newPath, callback)</code> - Rename a file</li>
+                </ul>
+
+                <!-- HTTP -->
+                <h3>HTTP</h3>
+                <ul>
+                    <li><code>http.createServer(callback)</code> - Create an HTTP server</li>
+                    <li><code>server.listen(port, hostname, callback)</code> - Server listens on a specified port and
+                        hostname</li>
+                    <li><code>req.url</code> - Get the URL of the request</li>
+                    <li><code>req.method</code> - Get the HTTP method of the request</li>
+                    <li><code>res.write(data)</code> - Write data to the response</li>
+                    <li><code>res.end()</code> - End the response</li>
+                    <li><code>res.setHeader(name, value)</code> - Set a response header</li>
+                    <li><code>http.get(url, callback)</code> - Make an HTTP GET request</li>
+                    <li><code>http.request(options, callback)</code> - Make an HTTP request</li>
+                </ul>
+
+                <!-- Express.js -->
+                <h3>Express.js</h3>
+                <ul>
+                    <li><code>const express = require('express')</code> - Import Express</li>
+                    <li><code>const app = express()</code> - Create an Express application</li>
+                    <li><code>app.get(path, callback)</code> - Define a GET route</li>
+                    <li><code>app.post(path, callback)</code> - Define a POST route</li>
+                    <li><code>app.put(path, callback)</code> - Define a PUT route</li>
+                    <li><code>app.delete(path, callback)</code> - Define a DELETE route</li>
+                    <li><code>app.use(middleware)</code> - Use middleware</li>
+                    <li><code>app.listen(port, callback)</code> - Start the server</li>
+                    <li><code>req.params</code> - Access route parameters</li>
+                    <li><code>req.query</code> - Access query string parameters</li>
+                    <li><code>req.body</code> - Access request body (requires body-parsing middleware)</li>
+                    <li><code>res.send(data)</code> - Send a response</li>
+                    <li><code>res.json(data)</code> - Send a JSON response</li>
+                    <li><code>res.status(code)</code> - Set the response status code</li>
+                </ul>
+
+                <!-- Middleware -->
+                <h3>Middleware</h3>
+                <ul>
+                    <li><code>app.use(middleware)</code> - Use application-level middleware</li>
+                    <li><code>app.use(path, middleware)</code> - Use path-specific middleware</li>
+                    <li><code>app.use((req, res, next) => { next(); })</code> - Custom middleware function</li>
+                    <li><code>express.static(root)</code> - Serve static files</li>
+                    <li><code>bodyParser.json()</code> - Parse JSON bodies</li>
+                    <li><code>bodyParser.urlencoded({ extended: true })</code> - Parse URL-encoded bodies</li>
+                    <li><code>cors()</code> - Enable Cross-Origin Resource Sharing</li>
+                    <li><code>morgan('tiny')</code> - HTTP request logger middleware</li>
+                </ul>
+
+                <!-- Databases -->
+                <h3>Databases</h3>
+                <ul>
+                    <li><code>const mongoose = require('mongoose')</code> - Import Mongoose (MongoDB)</li>
+                    <li><code>mongoose.connect(uri, options)</code> - Connect to MongoDB</li>
+                    <li><code>const Schema = mongoose.Schema</code> - Create a schema</li>
+                    <li><code>const Model = mongoose.model('ModelName', schema)</code> - Create a model</li>
+                    <li><code>Model.find(query, callback)</code> - Find documents</li>
+                    <li><code>Model.findById(id, callback)</code> - Find a document by ID</li>
+                    <li><code>Model.create(data, callback)</code> - Create a document</li>
+                    <li><code>Model.update(query, data, options, callback)</code> - Update documents</li>
+                    <li><code>Model.deleteOne(query, callback)</code> - Delete a document</li>
+                    <li><code>Model.deleteMany(query, callback)</code> - Delete multiple documents</li>
+                </ul>
+
+                <!-- Events -->
+                <h3>Events</h3>
+                <ul>
+                    <li><code>const EventEmitter = require('events')</code> - Import events module</li>
+                    <li><code>const emitter = new EventEmitter()</code> - Create an event emitter</li>
+                    <li><code>emitter.on(event, listener)</code> - Listen for an event</li>
+                    <li><code>emitter.emit(event, args)</code> - Emit an event</li>
+                    <li><code>emitter.once(event, listener)</code> - Listen for an event once</li>
+                    <li><code>emitter.removeListener(event, listener)</code> - Remove a specific listener</li>
+                    <li><code>emitter.removeAllListeners(event)</code> - Remove all listeners for an event</li>
+                </ul>
+
+                <!-- Buffers -->
+                <h3>Buffers</h3>
+                <ul>
+                    <li><code>Buffer.alloc(size)</code> - Allocate a buffer</li>
+                    <li><code>Buffer.from(array)</code> - Create a buffer from an array</li>
+                    <li><code>buffer.write(string)</code> - Write to a buffer</li>
+                    <li><code>buffer.toString(encoding)</code> - Convert buffer to string</li>
+                    <li><code>buffer.length</code> - Get buffer length</li>
+                </ul>
+
+                <!-- Streams -->
+                <h3>Streams</h3>
+                <ul>
+                    <li><code>const stream = require('stream')</code> - Import stream module</li>
+                    <li><code>const readable = new stream.Readable()</code> - Create a readable stream</li>
+                    <li><code>const writable = new stream.Writable()</code> - Create a writable stream</li>
+                    <li><code>readable.push(data)</code> - Push data into readable stream</li>
+                    <li><code>readable.pipe(writable)</code> - Pipe data from readable to writable stream</li>
+                    <li><code>writable.write(data)</code> - Write data to writable stream</li>
+                    <li><code>readable.on('data', (chunk) => {})</code> - Handle data event</li>
+                    <li><code>readable.on('end', () => {})</code> - Handle end event</li>
+                </ul>
+
+                <!-- Error Handling -->
+                <h3>Error Handling</h3>
+                <ul>
+                    <li><code>try { ... } catch (err) { ... }</code> - Try-catch block</li>
+                    <li><code>throw new Error(message)</code> - Throw an error</li>
+                    <li><code>process.on('uncaughtException', callback)</code> - Handle uncaught exceptions</li>
+                    <li><code>process.on('unhandledRejection', callback)</code> - Handle unhandled promise rejections
+                    </li>
+                </ul>
+                <!-- Miscellaneous -->
+                <h3>Miscellaneous</h3>
+                <ul>
+                    <li><code>const os = require('os')</code> - Import OS module</li>
+                    <li><code>os.platform()</code> - Get OS platform</li>
+                    <li><code>os.cpus()</code> - Get CPU information</li>
+                    <li><code>os.freemem()</code> - Get free memory</li>
+                    <li><code>os.totalmem()</code> - Get total memory</li>
+                    <li><code>const path = require('path')</code> - Import Path module</li>
+                    <li><code>path.join(...paths)</code> - Join paths</li>
+                    <li><code>path.resolve(...paths)</code> - Resolve paths</li>
+                    <li><code>path.basename(path)</code> - Get base name of a path</li>
+                    <li><code>path.dirname(path)</code> - Get directory name of a path</li>
+                    <li><code>path.extname(path)</code> - Get extension of a path</li>
+                    <li><code>const url = require('url')</code> - Import URL module</li>
+                    <li><code>url.parse(urlString)</code> - Parse a URL string</li>
+                    <li><code>url.format(urlObject)</code> - Format a URL object</li>
+                    <li><code>const util = require('util')</code> - Import Util module</li>
+                    <li><code>util.promisify(func)</code> - Promisify a callback-based function</li>
+                    <li><code>console.log(message)</code> - Log a message</li>
+                    <li><code>console.error(error)</code> - Log an error</li>
+                    <li><code>setTimeout(callback, delay)</code> - Set a timeout</li>
+                    <li><code>setInterval(callback, interval)</code> - Set an interval</li>
+                    <li><code>clearTimeout(timeoutId)</code> - Clear a timeout</li>
+                    <li><code>clearInterval(intervalId)</code> - Clear an interval</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="express">
+            <h2>Express.js</h2>
+            <div class="cheat-sheet-content">
+                <h3>Basic Setup</h3>
+                <ul>
+                    <li><code>const express = require('express')</code> - Import Express</li>
+                    <li><code>const app = express()</code> - Create an Express application</li>
+                    <li><code>app.listen(port, callback)</code> - Start the server</li>
+                </ul>
+                <h3>Routing</h3>
+                <ul>
+                    <li><code>app.get(path, callback)</code> - Define a GET route</li>
+                    <li><code>app.post(path, callback)</code> - Define a POST route</li>
+                    <li><code>app.put(path, callback)</code> - Define a PUT route</li>
+                    <li><code>app.delete(path, callback)</code> - Define a DELETE route</li>
+                    <li><code>app.all(path, callback)</code> - Define a route for all HTTP methods</li>
+                    <li><code>app.use(path, middleware)</code> - Use middleware for a path</li>
+                </ul>
+                <h3>Middleware</h3>
+                <ul>
+                    <li><code>app.use(middleware)</code> - Use application-level middleware</li>
+                    <li><code>app.use(path, middleware)</code> - Use middleware for a specific path</li>
+                    <li><code>app.use(express.static(path))</code> - Serve static files</li>
+                    <li><code>app.use(express.json())</code> - Parse JSON bodies</li>
+                    <li><code>app.use(express.urlencoded({ extended: true }))</code> - Parse URL-encoded bodies</li>
+                </ul>
+                <h3>Request and Response</h3>
+                <ul>
+                    <li><code>req.params</code> - Route parameters</li>
+                    <li><code>req.query</code> - Query string parameters</li>
+                    <li><code>req.body</code> - Request body data</li>
+                    <li><code>res.send(data)</code> - Send a response</li>
+                    <li><code>res.json(data)</code> - Send a JSON response</li>
+                    <li><code>res.status(code).send(data)</code> - Send a response with status code</li>
+                    <li><code>res.redirect(url)</code> - Redirect to a URL</li>
+                    <li><code>res.render(view, data)</code> - Render a view template</li>
+                </ul>
+                <h3>Error Handling</h3>
+                <ul>
+                    <li><code>app.use((err, req, res, next) => { ... })</code> - Error-handling middleware</li>
+                </ul>
+                <h3>Advanced Topics</h3>
+                <ul>
+                    <li><code>app.route(path)</code> - Create a chainable route handler for a path</li>
+                    <li><code>app.locals</code> - Local variables for the application</li>
+                    <li><code>req.app</code> - Access the app object in a route</li>
+                    <li><code>req.baseUrl</code> - Get the base URL path</li>
+                    <li><code>req.originalUrl</code> - Get the original request URL</li>
+                    <li><code>express.Router()</code> - Create a new router object</li>
+                    <li><code>router.use(middleware)</code> - Use middleware with the router</li>
+                    <li><code>router.route(path)</code> - Create a chainable route handler for the router</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="mongodb">
+            <h2>MongoDB</h2>
+            <div class="cheat-sheet-content">
+                <h3>Basic Commands</h3>
+                <ul>
+                    <li><code>show dbs</code> - Show databases</li>
+                    <li><code>use dbname</code> - Switch to database</li>
+                    <li><code>db.collection.find()</code> - Find documents in a collection</li>
+                    <li><code>db.collection.findOne(query)</code> - Find a single document that matches the query</li>
+                    <li><code>show collections</code> - List collections in the current database</li>
+                    <li><code>db.dropDatabase()</code> - Drop the current database</li>
+                    <li><code>db.collection.drop()</code> - Drop a collection</li>
+                </ul>
+                <h3>CRUD Operations</h3>
+                <ul>
+                    <li><code>db.collection.insertOne(document)</code> - Insert a single document</li>
+                    <li><code>db.collection.insertMany([document1, document2, ...])</code> - Insert multiple documents
+                    </li>
+                    <li><code>db.collection.find(query)</code> - Find documents that match the query</li>
+                    <li><code>db.collection.find(query).pretty()</code> - Find documents with formatted output</li>
+                    <li><code>db.collection.updateOne(query, update)</code> - Update a single document</li>
+                    <li><code>db.collection.updateMany(query, update)</code> - Update multiple documents</li>
+                    <li><code>db.collection.replaceOne(query, replacement)</code> - Replace a single document</li>
+                    <li><code>db.collection.deleteOne(query)</code> - Delete a single document</li>
+                    <li><code>db.collection.deleteMany(query)</code> - Delete multiple documents</li>
+                </ul>
+                <h3>Indexing</h3>
+                <ul>
+                    <li><code>db.collection.createIndex({ field: 1 })</code> - Create an index on a field (ascending)
+                    </li>
+                    <li><code>db.collection.createIndex({ field: -1 })</code> - Create an index on a field (descending)
+                    </li>
+                    <li><code>db.collection.dropIndex(indexName)</code> - Drop an index</li>
+                    <li><code>db.collection.getIndexes()</code> - List indexes on a collection</li>
+                </ul>
+                <h3>Aggregation</h3>
+                <ul>
+                    <li><code>db.collection.aggregate([{ $match: query }, { $group: { _id: "$field", total: { $sum: 1 } } }])</code>
+                        - Aggregation pipeline</li>
+                    <li><code>$match</code> - Filter documents</li>
+                    <li><code>$group</code> - Group documents by field</li>
+                    <li><code>$sort</code> - Sort documents</li>
+                    <li><code>$project</code> - Project specific fields</li>
+                </ul>
+                <h3>Data Modeling</h3>
+                <ul>
+                    <li><code>Embedded Documents</code> - Store related data in a single document</li>
+                    <li><code>References</code> - Use references to link documents</li>
+                    <li><code>Normalization</code> - Avoid data duplication by storing related data separately</li>
+                    <li><code>Denormalization</code> - Include related data in the same document for faster reads</li>
+                </ul>
+                <h3>Backup and Restore</h3>
+                <ul>
+                    <li><code>mongodump --db dbname --out /path/to/backup</code> - Backup a database</li>
+                    <li><code>mongorestore /path/to/backup</code> - Restore a database from a backup</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> Raviranjan MERN Stack Cheat Sheet</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
